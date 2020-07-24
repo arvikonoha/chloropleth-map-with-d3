@@ -1,0 +1,51 @@
+#svgc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1,
+p {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.county {
+  cursor: pointer;
+}
+
+#tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #333648;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 3;
+}
+
+#tooltip #state {
+  padding: 8px;
+  color: #fff;
+  font-size: 1.8rem;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+#tooltip #details {
+  padding: 8px;
+  color: #fff;
+}
+
+#tooltip .percentage {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
